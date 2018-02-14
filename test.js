@@ -16,7 +16,7 @@ var add = document.getElementById('+')
 var sub = document.getElementById('-')
 var div = document.getElementById('/')
 var times = document.getElementById('*')
-var perc = document.getElementById('%')
+
 var equals = document.getElementById('=')
 
 
@@ -96,9 +96,6 @@ div.addEventListener('click', function(){
   addDigit('/');
 })
 
-perc.addEventListener('click', function(){
-  addDigit('%');
-})
 
 
 
