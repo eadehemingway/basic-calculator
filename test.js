@@ -11,6 +11,13 @@ var seven = document.getElementById('7')
 var eight = document.getElementById('8')
 var nine = document.getElementById('9')
 var zero = document.getElementById('0')
+var dec = document.getElementById('.')
+var add = document.getElementById('+')
+var sub = document.getElementById('-')
+var div = document.getElementById('/')
+var times = document.getElementById('*')
+var perc = document.getElementById('%')
+var equals = document.getElementById('=')
 
 
 function addDigit(dig){
@@ -67,4 +74,34 @@ nine.addEventListener('click', function(){
 
 zero.addEventListener('click', function(){
   addDigit('0');
+})
+
+dec.addEventListener('click', function(){
+  addDigit('.');
+})
+
+add.addEventListener('click', function(){
+  addDigit('+');
+})
+
+sub.addEventListener('click', function(){
+  addDigit('-');
+})
+
+times.addEventListener('click', function(){
+  addDigit('*');
+})
+
+div.addEventListener('click', function(){
+  addDigit('/');
+})
+
+perc.addEventListener('click', function(){
+  addDigit('%');
+})
+
+
+
+equals.addEventListener('click', function(){
+  numscreen.textContent = eval(numscreen.textContent);
 })
