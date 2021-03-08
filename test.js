@@ -1,4 +1,19 @@
 
+var sentence = 'women are sick at coding'
+console.log(sentence)
+var sum = 4 + 3
+console.log(sum)
+
+function printName (str) {
+  console.log("my name is "+ str)
+  }
+
+var jess_name = "jess"
+var eade_name = "eade"
+printName(jess_name) // will print "my name is jess"
+printName(eade_name) // will print "my name is eade"
+
+
 
 var values = [
   '1',
